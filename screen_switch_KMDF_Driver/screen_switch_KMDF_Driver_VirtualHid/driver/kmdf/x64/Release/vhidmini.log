@@ -1,12 +1,12 @@
 ﻿  Building 'vhidmini' with toolset 'WindowsKernelModeDriver10.0' and the 'Windows Driver' target platform.
-  Stamping x64\Release\vhidmini.inf
-  Stamping [Version] section with DriverVer=07/23/2025,21.36.10.637
+  Stamping x64\Release\ScreenSwitchVirtualHid.inf
+  Stamping [Version] section with DriverVer=07/23/2025,22.32.32.896
   vhidmini.vcxproj -> C:\Users\matt\Desktop\working-directory\screen_switch\screen_switch_KMDF_Driver\screen_switch_KMDF_Driver_VirtualHid\driver\kmdf\x64\Release\ScreenSwitchVirtualHid.sys
   Done Adding Additional Store
   Successfully signed: C:\Users\matt\Desktop\working-directory\screen_switch\screen_switch_KMDF_Driver\screen_switch_KMDF_Driver_VirtualHid\driver\kmdf\x64\Release\ScreenSwitchVirtualHid.sys
   
   Driver is 'Windows Driver'.
-  .........................
+  ........................................
   Signability test complete.
   
   Errors:
@@ -17,10 +17,6 @@
   
   Catalog generation complete.
   C:\Users\matt\Desktop\working-directory\screen_switch\screen_switch_KMDF_Driver\screen_switch_KMDF_Driver_VirtualHid\driver\kmdf\x64\Release\vhidmini\screenswitchvirtualhid.cat
-  Set catalog attribute.
-  WdkVersion: 10.0.26100.0
-  Set catalog attribute.
-  WdkAssemblyVersion: 10.0.26100.4202
   Done Adding Additional Store
   Successfully signed: x64\Release\vhidmini\screenswitchvirtualhid.cat
   

@@ -32,7 +32,7 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Inf Include="*.inx">
+    <Inf Include="ScreenSwitchVirtualHid.inx">
       <Filter>Driver Files</Filter>
     </Inf>
   </ItemGroup>
