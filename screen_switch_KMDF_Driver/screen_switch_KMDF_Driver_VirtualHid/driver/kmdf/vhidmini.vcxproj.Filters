@@ -36,4 +36,9 @@
       <Filter>Driver Files</Filter>
     </Inf>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ScreenSwitchVirtualHid.sys">
+      <Filter>Driver Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>
