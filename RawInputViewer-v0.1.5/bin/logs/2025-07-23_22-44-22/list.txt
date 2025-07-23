@@ -1,0 +1,325 @@
+================
+Initial HID List
+================
+Handle: 0x000000000001048F (Type 2)
+\\?\VIRTUAL_DIGITIZER
+      HID Type:  2 (RIM_TYPEHID)
+      VendorID:  0000
+      ProductID: 0000
+      Revision:  0001
+      UsagePage: 000D (DIGITIZERS)
+      UsageID:   0004 (TOUCH SCREEN)
+
+Handle: 0x00000000000501C9 (Type 2)
+\\?\Microsoft HID RID\000D_0002\1
+      HID Type:  2 (RIM_TYPEHID)
+      VendorID:  0000
+      ProductID: 0000
+      Revision:  0001
+      UsagePage: 000D (DIGITIZERS)
+      UsageID:   0002 (PEN)
+
+Handle: 0x000000000002004B (Type 2)
+\\?\HID#VID_0C45&PID_6525&MI_01&Col04#8&1de5e92a&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  Vendor:  VID_0C45 (SONiX)
+  Product: PID_6525 (USB DEVICE)
+  Version: REV_0104
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:  2 (RIM_TYPEHID)
+      VendorID:  0C45
+      ProductID: 6525
+      Revision:  0104
+      UsagePage: FF1C (VENDOR-DEFINED)
+      UsageID:   0092 (VENDOR-DEFINED)
+
+Handle: 0x000000000002004D (Type 2)
+\\?\HID#VID_0C45&PID_6525&MI_01&Col03#8&1de5e92a&0&0002#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  Vendor:  VID_0C45 (SONiX)
+  Product: PID_6525 (USB DEVICE)
+  Version: REV_0104
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:  2 (RIM_TYPEHID)
+      VendorID:  0C45
+      ProductID: 6525
+      Revision:  0104
+      UsagePage: 000C (CONSUMER)
+      UsageID:   0001 (CONSUMER CONTROL)
+
+Handle: 0x000000000002004F (Type 2)
+\\?\HID#VID_0C45&PID_6525&MI_01&Col02#8&1de5e92a&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  Vendor:  VID_0C45 (SONiX)
+  Product: PID_6525 (USB DEVICE)
+  Version: REV_0104
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:  2 (RIM_TYPEHID)
+      VendorID:  0C45
+      ProductID: 6525
+      Revision:  0104
+      UsagePage: 0001 (GENERIC DESKTOP)
+      UsageID:   000C (WIRELESS RADIO CONTROLS)
+
+Handle: 0x0000000000020051 (Type 2)
+\\?\HID#VID_4132&PID_2107&MI_02#8&2170326d&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  Vendor:  VID_4132
+  Product: PID_2107
+  Version: REV_0000
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:  2 (RIM_TYPEHID)
+      VendorID:  4132
+      ProductID: 2107
+      Revision:  0000
+      UsagePage: 000C (CONSUMER)
+      UsageID:   0001 (CONSUMER CONTROL)
+
+Handle: 0x0000000000020053 (Type 2)
+\\?\HID#VID_0C76&PID_1818&MI_03#8&2df912ca&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  Vendor:  VID_0C76 (V:NO_NO_NONE)
+  Product: PID_1818 (GM50U)
+  Version: REV_0100
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:  2 (RIM_TYPEHID)
+      VendorID:  0C76
+      ProductID: 1818
+      Revision:  0100
+      UsagePage: 000C (CONSUMER)
+      UsageID:   0001 (CONSUMER CONTROL)
+
+Handle: 0x0000000000020055 (Type 2)
+\\?\HID#VID_4132&PID_2107&MI_03#8&7e831bc&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  Vendor:  VID_4132
+  Product: PID_2107
+  Version: REV_0000
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:  2 (RIM_TYPEHID)
+      VendorID:  4132
+      ProductID: 2107
+      Revision:  0000
+      UsagePage: FF00 (VENDOR-DEFINED)
+      UsageID:   0001 (VENDOR-DEFINED)
+
+Handle: 0x0000000000010049 (Type 1)
+\\?\HID#VID_4132&PID_2107&MI_00#8&155c80f0&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}
+  Vendor:  VID_4132
+  Product: PID_2107
+  Version: REV_0000
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:   1 (RIM_TYPEKEYBOARD)
+      KbType:     0x51 (Unknown type or HID keyboard)
+      KbSubType:  0x00
+      ScanMode:   1
+      FuncKeys:   12
+      Indicators: 3
+      TotalKeys:  154
+
+Handle: 0x0000000000010047 (Type 1)
+\\?\HID#VID_0C45&PID_6525&MI_00#8&2104d6d9&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}
+  Vendor:  VID_0C45 (SONiX)
+  Product: PID_6525 (USB DEVICE)
+  Version: REV_0104
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:   1 (RIM_TYPEKEYBOARD)
+      KbType:     0x51 (Unknown type or HID keyboard)
+      KbSubType:  0x00
+      ScanMode:   1
+      FuncKeys:   12
+      Indicators: 3
+      TotalKeys:  264
+
+Handle: 0x0000000000010045 (Type 1)
+\\?\HID#VID_0C45&PID_6525&MI_01&Col01#8&1de5e92a&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}
+  Vendor:  VID_0C45 (SONiX)
+  Product: PID_6525 (USB DEVICE)
+  Version: REV_0104
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:   1 (RIM_TYPEKEYBOARD)
+      KbType:     0x51 (Unknown type or HID keyboard)
+      KbSubType:  0x00
+      ScanMode:   1
+      FuncKeys:   12
+      Indicators: 3
+      TotalKeys:  109
+
+Handle: 0x000000000001003D (Type 0)
+\\?\HID#VID_0C45&PID_6525&MI_01&Col05#8&1de5e92a&0&0004#{378de44c-56ef-11d1-bc8c-00a0c91405dd}
+  Vendor:  VID_0C45 (SONiX)
+  Product: PID_6525 (USB DEVICE)
+  Version: REV_0104
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:   0 (RIM_TYPEMOUSE)
+      Id:         0x0100 (WHEELMOUSE_HID_HARDWARE)
+      Buttons:    5
+      SampleRate: 0
+      HorWheel:   0
+
+Handle: 0x000000000001003B (Type 0)
+\\?\HID#VID_4132&PID_2107&MI_01#8&3933beb2&0&0000#{378de44c-56ef-11d1-bc8c-00a0c91405dd}
+  Vendor:  VID_4132
+  Product: PID_2107
+  Version: REV_0000
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:   0 (RIM_TYPEMOUSE)
+      Id:         0x0100 (WHEELMOUSE_HID_HARDWARE)
+      Buttons:    8
+      SampleRate: 0
+      HorWheel:   0
+
+Handle: 0x0000000000010039 (Type 0)
+\\?\HID#VID_30FA&PID_0400#7&1fec03a0&0&0000#{378de44c-56ef-11d1-bc8c-00a0c91405dd}
+  Vendor:  VID_30FA
+  Product: PID_0400 (USB Optical Mouse )
+  Version: REV_0100
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:   0 (RIM_TYPEMOUSE)
+      Id:         0x0100 (WHEELMOUSE_HID_HARDWARE)
+      Buttons:    5
+      SampleRate: 0
+      HorWheel:   0
+
+
+---------------- Recording Starts ----------------
+
+==============
+ GIDC_ARRIVAL 
+==============
+Handle: 0x000000000001048F (Type 2)
+\\?\VIRTUAL_DIGITIZER
+      HID Type:  2 (RIM_TYPEHID)
+      VendorID:  0000
+      ProductID: 0000
+      Revision:  0001
+      UsagePage: 000D (DIGITIZERS)
+      UsageID:   0004 (TOUCH SCREEN)
+
+
+==============
+ GIDC_ARRIVAL 
+==============
+Handle: 0x00000000000501C9 (Type 2)
+\\?\Microsoft HID RID\000D_0002\1
+      HID Type:  2 (RIM_TYPEHID)
+      VendorID:  0000
+      ProductID: 0000
+      Revision:  0001
+      UsagePage: 000D (DIGITIZERS)
+      UsageID:   0002 (PEN)
+
+
+==============
+ GIDC_ARRIVAL 
+==============
+Handle: 0x000000000002004B (Type 2)
+\\?\HID#VID_0C45&PID_6525&MI_01&Col04#8&1de5e92a&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  Vendor:  VID_0C45 (SONiX)
+  Product: PID_6525 (USB DEVICE)
+  Version: REV_0104
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:  2 (RIM_TYPEHID)
+      VendorID:  0C45
+      ProductID: 6525
+      Revision:  0104
+      UsagePage: FF1C (VENDOR-DEFINED)
+      UsageID:   0092 (VENDOR-DEFINED)
+
+
+==============
+ GIDC_ARRIVAL 
+==============
+Handle: 0x000000000002004D (Type 2)
+\\?\HID#VID_0C45&PID_6525&MI_01&Col03#8&1de5e92a&0&0002#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  Vendor:  VID_0C45 (SONiX)
+  Product: PID_6525 (USB DEVICE)
+  Version: REV_0104
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:  2 (RIM_TYPEHID)
+      VendorID:  0C45
+      ProductID: 6525
+      Revision:  0104
+      UsagePage: 000C (CONSUMER)
+      UsageID:   0001 (CONSUMER CONTROL)
+
+
+==============
+ GIDC_ARRIVAL 
+==============
+Handle: 0x0000000000020051 (Type 2)
+\\?\HID#VID_4132&PID_2107&MI_02#8&2170326d&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  Vendor:  VID_4132
+  Product: PID_2107
+  Version: REV_0000
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:  2 (RIM_TYPEHID)
+      VendorID:  4132
+      ProductID: 2107
+      Revision:  0000
+      UsagePage: 000C (CONSUMER)
+      UsageID:   0001 (CONSUMER CONTROL)
+
+
+==============
+ GIDC_ARRIVAL 
+==============
+Handle: 0x0000000000020053 (Type 2)
+\\?\HID#VID_0C76&PID_1818&MI_03#8&2df912ca&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  Vendor:  VID_0C76 (V:NO_NO_NONE)
+  Product: PID_1818 (GM50U)
+  Version: REV_0100
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:  2 (RIM_TYPEHID)
+      VendorID:  0C76
+      ProductID: 1818
+      Revision:  0100
+      UsagePage: 000C (CONSUMER)
+      UsageID:   0001 (CONSUMER CONTROL)
+
+
+==============
+ GIDC_ARRIVAL 
+==============
+Handle: 0x000000000002004F (Type 2)
+\\?\HID#VID_0C45&PID_6525&MI_01&Col02#8&1de5e92a&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  Vendor:  VID_0C45 (SONiX)
+  Product: PID_6525 (USB DEVICE)
+  Version: REV_0104
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:  2 (RIM_TYPEHID)
+      VendorID:  0C45
+      ProductID: 6525
+      Revision:  0104
+      UsagePage: 0001 (GENERIC DESKTOP)
+      UsageID:   000C (WIRELESS RADIO CONTROLS)
+
+
+==============
+ GIDC_ARRIVAL 
+==============
+Handle: 0x0000000000020055 (Type 2)
+\\?\HID#VID_4132&PID_2107&MI_03#8&7e831bc&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  Vendor:  VID_4132
+  Product: PID_2107
+  Version: REV_0000
+  Buffers: 32
+  Interface: 4D1E55B2-F16F-11CF-88CB001111000030
+      HID Type:  2 (RIM_TYPEHID)
+      VendorID:  4132
+      ProductID: 2107
+      Revision:  0000
+      UsagePage: FF00 (VENDOR-DEFINED)
+      UsageID:   0001 (VENDOR-DEFINED)
+

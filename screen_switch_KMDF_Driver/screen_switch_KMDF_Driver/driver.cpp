@@ -23,6 +23,7 @@ NTSTATUS FilterEvtAdd(WDFDRIVER, WDFDEVICE_INIT* init) {
 }
 
 VOID FilterEvtIoctl(WDFQUEUE q, WDFREQUEST r, size_t o, size_t i, ULONG code) {
+    UNREFERENCED_PARAMETER(o);
     UNREFERENCED_PARAMETER(i);
     if (code == IOCTL_HID_READ_REPORT) {
         PUCHAR buf = nullptr; size_t len = 0;
@@ -37,8 +38,8 @@ VOID FilterEvtIoctl(WDFQUEUE q, WDFREQUEST r, size_t o, size_t i, ULONG code) {
             WdfIoTargetCreate(WdfIoQueueGetDevice(q), &attrs, &tgt);
             WDF_IO_TARGET_OPEN_PARAMS p;
             WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_NAME(&p, &g_vhid_sym, GENERIC_WRITE);
-            NTSTATUS s = WdfIoTargetOpen(tgt, &p);
-            if (NT_SUCCESS(s)) {
+            NTSTATUS ss = WdfIoTargetOpen(tgt, &p);
+            if (NT_SUCCESS(ss)) {
                 WDF_MEMORY_DESCRIPTOR md; WDF_MEMORY_DESCRIPTOR_INIT_BUFFER(&md, buf, (ULONG)len);
                 WdfIoTargetSendWriteSynchronously(tgt, nullptr, &md, nullptr, nullptr, nullptr);
                 WdfIoTargetClose(tgt);
