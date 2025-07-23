@@ -3,7 +3,7 @@ Signature="$WINDOWS NT$"
 Class=HIDClass
 ClassGuid={745A17A0-74D3-11D0-B6FE-00A0C90F57DA}
 Provider=%Mfg%
-DriverVer = 07/24/2025,1.38.14.149
+DriverVer = 07/24/2025,2.1.16.382
 CatalogFile=ScreenSwitchFilter.cat
 PnpLockdown=1
 
@@ -11,9 +11,9 @@ PnpLockdown=1
 %Mfg%=Models,NTamd64
 
 [Models.NTamd64]
-%FilterDesc%=FilterInstall, HID\VID_4132&PID_2107
+%FilterDesc%=FilterInstall.NT$WINDOWS_NT$10$0$16299, HID\VID_4132&PID_2107
 
-[FilterInstall]
+[FilterInstall.NT$WINDOWS_NT$10$0$16299]
 Include=winusb.inf
 Needs=WINUSB.NT
 AddReg=RegFilter
@@ -30,13 +30,15 @@ DisplayName=%FilterDesc%
 ServiceType=1
 StartType=3
 ErrorControl=1
-ServiceBinary=%12%\ScreenSwitchFilter.sys
+ServiceBinary=%13%\ScreenSwitchFilter.sys
+
 
 [CopyFiles]
 ScreenSwitchFilter.sys
 
+
 [DestinationDirs]
-CopyFiles=12
+CopyFiles=13
 
 [SourceDisksNames]
 1=%DiskName%

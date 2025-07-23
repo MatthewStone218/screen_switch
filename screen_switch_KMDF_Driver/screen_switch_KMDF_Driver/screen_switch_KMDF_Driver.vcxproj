@@ -112,7 +112,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Inf Include="ScreenSwitchFilter.inf" />
-    <Inf Include="screen_switch_KMDF_Driver.inf" />
   </ItemGroup>
   <ItemGroup>
     <FilesToPackage Include="$(TargetPath)" />

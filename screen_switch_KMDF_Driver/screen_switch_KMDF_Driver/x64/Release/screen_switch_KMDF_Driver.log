@@ -1,6 +1,7 @@
 ﻿  Building 'screen_switch_KMDF_Driver' with toolset 'WindowsKernelModeDriver10.0' and the 'Windows Driver' target platform.
   Stamping x64\Release\ScreenSwitchFilter.inf
-  Stamping [Version] section with DriverVer=07/24/2025,1.38.14.149
-  Stamping x64\Release\screen_switch_KMDF_Driver.inf
-  Stamping [Version] section with DriverVer=07/24/2025,1.38.14.248
-C:\Users\matt\Desktop\working-directory\screen_switch\screen_switch_KMDF_Driver\screen_switch_KMDF_Driver\ScreenSwitchFilter.inf(35-35): error 1322: Destination file path 'C:\Windows\System32\drivers' for file 'ScreenSwitchFilter.sys' is not isolated to DIRID 13.
+  Stamping [Version] section with DriverVer=07/24/2025,2.1.16.382
+C:\Users\matt\Desktop\working-directory\screen_switch\screen_switch_KMDF_Driver\screen_switch_KMDF_Driver\ScreenSwitchFilter.inf : error 1199: The syntax 'DIRID 13 (CopyFiles)' was introduced in OS version 10.0.16299, but DDInstall sections utilizing the syntax will install on earlier OS versions. Those DDInstall sections should be restricted to only install on 10.0.16299 or higher using a TargetOSVersion decoration.
+C:\Users\matt\Desktop\working-directory\screen_switch\screen_switch_KMDF_Driver\screen_switch_KMDF_Driver\ScreenSwitchFilter.inf(16-16): error 1296: Hardware 'Screen Switch HID Filter' does not have an associated service using install section 'FilterInstall.NT$WINDOWS_NT$10$0$16299'.
+C:\Users\matt\Desktop\working-directory\screen_switch\screen_switch_KMDF_Driver\screen_switch_KMDF_Driver\ScreenSwitchFilter.inf(22-22): warning 2083: Section [filterinstall.services] not referenced or used.
+C:\Users\matt\Desktop\working-directory\screen_switch\screen_switch_KMDF_Driver\screen_switch_KMDF_Driver\ScreenSwitchFilter.inf(28-28): warning 2083: Section [svcinstall] not referenced or used.
