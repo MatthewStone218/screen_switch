@@ -1,0 +1,47 @@
+[Version]
+Signature="$WINDOWS NT$"
+Class=HIDClass
+ClassGuid={745A17A0-74D3-11D0-B6FE-00A0C90F57DA}
+Provider=%Mfg%
+DriverVer=07/23/2025,1.0.0.0
+CatalogFile=ScreenSwitchFilter.cat
+
+[Manufacturer]
+%Mfg%=Models
+
+[Models]
+%FilterDesc%=FilterInstall,"HID\VID_4132&PID_2107"
+
+[FilterInstall]
+Include=winusb.inf          ; ↓ 키보드 인터페이스를 WinUSB로 교체
+Needs=WINUSB.NT
+AddReg=RegFilter
+CopyFiles=CopyFiles
+AddService=ScreenSwitchFilter,0x00000002,SvcInstall
+
+[RegFilter]                 ; Upper-filter 등록
+HKR,,UpperFilters,0x10000,"ScreenSwitchFilter"
+
+[SvcInstall]
+DisplayName=%FilterDesc%
+ServiceType=1               ; SERVICE_KERNEL_DRIVER
+StartType=3                 ; Demand start
+ErrorControl=1
+ServiceBinary=%12%\ScreenSwitchFilter.sys
+
+[CopyFiles]
+ScreenSwitchFilter.sys
+
+[DestinationDirs]
+CopyFiles=12                ; %SystemRoot%\System32\drivers
+
+[SourceDisksNames]
+1=%DiskName%
+
+[SourceDisksFiles]
+ScreenSwitchFilter.sys=1
+
+[Strings]
+Mfg="YourCompany"
+FilterDesc="Screen Switch HID Filter"
+DiskName="ScreenSwitchFilter Disk"

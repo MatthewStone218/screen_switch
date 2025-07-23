@@ -1,0 +1,6 @@
+﻿  Building 'vhidmini' with toolset 'WindowsKernelModeDriver10.0' and the 'Windows Driver' target platform.
+  Stamping x64\Release\vhidmini.inf
+  Stamping [Version] section with DriverVer=07/23/2025,19.21.29.15
+C:\Users\matt\Desktop\working-directory\screen_switch\screen_switch_KMDF_Driver\screen_switch_KMDF_Driver_VirtualHid\driver\kmdf\vhidmini.inx(16-16): error 1296: Hardware 'Screen Switch Virtual HID' does not have an associated service using install section 'Install.NTamd64'.
+C:\Users\matt\Desktop\working-directory\screen_switch\screen_switch_KMDF_Driver\screen_switch_KMDF_Driver_VirtualHid\driver\kmdf\vhidmini.inx(20-20): warning 2083: Section [serviceinstall] not referenced or used.
+C:\Users\matt\Desktop\working-directory\screen_switch\screen_switch_KMDF_Driver\screen_switch_KMDF_Driver_VirtualHid\driver\kmdf\vhidmini.inx(26-26): error 1322: Destination file path 'C:\Windows\System32\drivers' for file 'ScreenSwitchVirtualHid.sys' is not isolated to DIRID 13.
