@@ -8,7 +8,7 @@ Class       = System ; TODO: specify appropriate Class
 ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318} ; TODO: specify appropriate ClassGuid
 Provider    = %ManufacturerName%
 CatalogFile = screen_switch_KMDF_Driver.cat
-DriverVer = 07/24/2025,1.38.14.248
+DriverVer = 07/23/2025,23.12.25.755
 PnpLockdown = 1
 
 [DestinationDirs]
@@ -52,7 +52,7 @@ ServiceBinary  = %13%\screen_switch_KMDF_Driver.sys
 KmdfService = screen_switch_KMDF_Driver, screen_switch_KMDF_Driver_wdfsect
 
 [screen_switch_KMDF_Driver_wdfsect]
-KmdfLibraryVersion = 1.33
+KmdfLibraryVersion = 1.15
 
 [Strings]
 SPSVCINST_ASSOCSERVICE = 0x00000002

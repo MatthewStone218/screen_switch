@@ -1,2 +1,9 @@
 ﻿  Building 'screen_switch_KMDF_Driver' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(504,5): error MSB8040: 이 프로젝트에는 스펙터 완화된 라이브러리가 필요합니다. 사용되는 모든 도구 세트 및 아키텍처의 경우 Visual Studio 설치 관리자(개별 구성 요소 탭)에서 설치하세요. 자세한 정보: https://aka.ms/Ofhn4c
+  Stamping x64\Debug\ScreenSwitchFilter.inf
+  Stamping [Version] section with DriverVer=07/23/2025,23.12.25.643
+  Stamping x64\Debug\screen_switch_KMDF_Driver.inf
+  Stamping [Version] section with DriverVer=07/23/2025,23.12.25.755
+WdfDriverEntry.lib(stub.obj) : error LNK2019: DriverEntryFxDriverEntryWorker 함수에서 참조되는 확인할 수 없는 외부 기호
+    정의되었으며 잠재적으로 일치할 수 있는 기호에 대한 힌트:
+      "long __cdecl DriverEntry(struct _DRIVER_OBJECT *,struct _UNICODE_STRING *)" (?DriverEntry@@YAJPEAU_DRIVER_OBJECT@@PEAU_UNICODE_STRING@@@Z)
+C:\Users\matt\Desktop\working-directory\screen_switch\screen_switch_KMDF_Driver\screen_switch_KMDF_Driver\x64\Debug\screen_switch_KMDF_Driver.sys : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
