@@ -1,4 +1,4 @@
 ﻿  Building 'screen_switch_KMDF_Driver' with toolset 'WindowsKernelModeDriver10.0' and the 'Windows Driver' target platform.
   Stamping x64\Release\ScreenSwitchFilter.inf
-  Stamping [Version] section with DriverVer=07/24/2025,13.14.34.754
+  Stamping [Version] section with DriverVer=07/24/2025,15.43.41.522
 C:\Users\matt\Desktop\working-directory\screen_switch\screen_switch_KMDF_Driver\screen_switch_KMDF_Driver\ScreenSwitchFilter.inf : error 1199: The syntax 'DIRID 13 (CopyFiles)' was introduced in OS version 10.0.16299, but DDInstall sections utilizing the syntax will install on earlier OS versions. Those DDInstall sections should be restricted to only install on 10.0.16299 or higher using a TargetOSVersion decoration.

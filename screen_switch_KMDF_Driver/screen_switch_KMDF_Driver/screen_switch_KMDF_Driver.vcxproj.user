@@ -3,4 +3,10 @@
   <PropertyGroup>
     <ShowAllFiles>false</ShowAllFiles>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TestCertificate>C:\Users\matt\Desktop\working-directory\screen_switch\screen_switch_KMDF_Driver\screen_switch_KMDF_Driver\cer\MyCert.pfx</TestCertificate>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TestCertificate>C:\Users\matt\Desktop\working-directory\screen_switch\screen_switch_KMDF_Driver\screen_switch_KMDF_Driver\cer\MyCert.pfx</TestCertificate>
+  </PropertyGroup>
 </Project>

@@ -19,9 +19,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Inf Include="screen_switch_KMDF_Driver.inf">
-      <Filter>Driver Files</Filter>
-    </Inf>
     <Inf Include="ScreenSwitchFilter.inf">
       <Filter>Driver Files</Filter>
     </Inf>

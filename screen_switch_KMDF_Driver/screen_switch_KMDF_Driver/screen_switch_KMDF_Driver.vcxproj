@@ -35,7 +35,12 @@
     <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
     <ConfigurationType>Driver</ConfigurationType>
     <DriverType>KMDF</DriverType>
-    <DriverTargetPlatform>Universal</DriverTargetPlatform>
+    <DriverTargetPlatform>Windows Driver</DriverTargetPlatform>
+    <_NT_TARGET_VERSION>0xA000007</_NT_TARGET_VERSION>
+    <ValidationVersion>10.0.18362</ValidationVersion>
+    <KMDF_VERSION_MAJOR>1</KMDF_VERSION_MAJOR>
+    <KMDF_VERSION_MINOR>25</KMDF_VERSION_MINOR>
+    <KMDF_MINIMUM_VERSION_REQUIRED>25</KMDF_MINIMUM_VERSION_REQUIRED>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <TargetVersion>Windows10</TargetVersion>
@@ -43,9 +48,14 @@
     <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
     <ConfigurationType>Driver</ConfigurationType>
     <DriverType>KMDF</DriverType>
-    <DriverTargetPlatform>Windows Driver</DriverTargetPlatform>
     <KMDF_VERSION_MAJOR>1</KMDF_VERSION_MAJOR>
-    <KMDF_VERSION_MINOR>33</KMDF_VERSION_MINOR>
+    <KMDF_VERSION_MINOR>31</KMDF_VERSION_MINOR>
+    <_NT_TARGET_VERSION>0xA000008</_NT_TARGET_VERSION>
+    <KMDF_MINIMUM_VERSION_REQUIRED>31</KMDF_MINIMUM_VERSION_REQUIRED>
+    <ValidationVersion>10.0.19041</ValidationVersion>
+    <OverrideTargetVersionDefines>
+    </OverrideTargetVersionDefines>
+    <DriverTargetPlatform>Windows Driver</DriverTargetPlatform>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
     <TargetVersion>Windows10</TargetVersion>
@@ -73,6 +83,7 @@
   <PropertyGroup />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <TargetName>ScreenSwitchFilter</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -111,7 +122,9 @@
     </DriverSign>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Inf Include="ScreenSwitchFilter.inf" />
+    <Inf Include="ScreenSwitchFilter.inf">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </Inf>
   </ItemGroup>
   <ItemGroup>
     <FilesToPackage Include="$(TargetPath)" />

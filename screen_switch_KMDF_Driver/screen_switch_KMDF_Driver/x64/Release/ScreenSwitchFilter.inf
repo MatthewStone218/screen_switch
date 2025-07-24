@@ -3,7 +3,7 @@ Signature="$WINDOWS NT$"
 Class=HIDClass
 ClassGuid={745A17A0-74D3-11D0-B6FE-00A0C90F57DA}
 Provider=%Mfg%
-DriverVer = 07/24/2025,13.14.34.754
+DriverVer = 07/24/2025,15.43.41.522
 CatalogFile=ScreenSwitchFilter.cat
 PnpLockdown=1
 
@@ -11,35 +11,33 @@ PnpLockdown=1
 %Mfg%=Models,NTamd64
 
 [Models.NTamd64]
-%FilterDesc%=FilterInstall, HID\VID_4132&PID_2107
+%FilterDesc%=Filter_Install, HID\VID_4132&PID_2107
 
-[FilterInstall]
+[Filter_Install]
 Include=winusb.inf
 Needs=WINUSB.NT
 AddReg=RegFilter
-CopyFiles=CopyFiles
-AddService=ScreenSwitchFilter,0x00000002,SvcInstall
+CopyFiles=Filter_CopyFiles
+AddService=ScreenSwitchFilter,0x00000002,Filter_ServiceInstall
 
-[FilterInstall.Services]
-AddService=ScreenSwitchFilter,0x00000002,SvcInstall
+[Filter_Install.Services]
+AddService=ScreenSwitchFilter,0x00000002,Filter_ServiceInstall
+
+[Filter_CopyFiles]
+ScreenSwitchFilter.sys
 
 [RegFilter]
 HKR,,UpperFilters,0x00010000,"ScreenSwitchFilter"
 
-[SvcInstall]
+[Filter_ServiceInstall]
 DisplayName=%FilterDesc%
 ServiceType=1
 StartType=3
 ErrorControl=1
 ServiceBinary=%13%\ScreenSwitchFilter.sys
 
-
-[CopyFiles]
-ScreenSwitchFilter.sys
-
-
 [DestinationDirs]
-CopyFiles=13
+Filter_CopyFiles=13
 
 [SourceDisksNames]
 1=%DiskName%
@@ -50,4 +48,4 @@ ScreenSwitchFilter.sys=1
 [Strings]
 Mfg="MatthewStone"
 FilterDesc="Screen Switch HID Filter"
-DiskName="ScreenSwitchFilter Disk"
+DiskName="ScreenSwitchFilter Installation Disk"
