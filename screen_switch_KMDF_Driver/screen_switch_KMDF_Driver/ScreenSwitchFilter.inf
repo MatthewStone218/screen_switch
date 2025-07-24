@@ -11,13 +11,14 @@ PnpLockdown=1
 %Mfg%=Models,NTamd64
 
 [Models.NTamd64]
-%FilterDesc%=FilterInstall.NT$WINDOWS_NT$10$0$16299, HID\VID_4132&PID_2107
+%FilterDesc%=FilterInstall, HID\VID_4132&PID_2107
 
-[FilterInstall.NT$WINDOWS_NT$10$0$16299]
+[FilterInstall]
 Include=winusb.inf
 Needs=WINUSB.NT
 AddReg=RegFilter
 CopyFiles=CopyFiles
+AddService=ScreenSwitchFilter,0x00000002,SvcInstall
 
 [FilterInstall.Services]
 AddService=ScreenSwitchFilter,0x00000002,SvcInstall
